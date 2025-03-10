@@ -1,0 +1,73 @@
+[
+    {
+        "id": 1,
+        "name": "family man",
+        "category": "action",
+         "description": "A series is a collection of related episodes or installments, often following a continuous storyline or theme.",
+         "img": "./images/series1.png"
+    },
+    {
+        "id": 2,
+        "name": "Riti Rivaj",
+        "category": "romantic",
+         "description": "A series is a collection of related episodes or installments, often following a continuous storyline or theme.",
+         "img": "./images/series2.png",
+         "price": "$66"
+    },
+    {
+        "id": 3,
+        "name": "Red Light",
+        "category": "erotic",
+         "description": "A series is a collection of related episodes or installments, often following a continuous theme.",
+         "img": "./images/series3.png",
+         "price": "$65"
+    },
+    {
+        "id": 4,
+        "name": "Smart Phone",
+        "category": "comedy",
+         "description": "A series is a collection of related episodes or installments, often following a continuous storyline or theme.",
+         "img": "./images/series4.png",
+         "price": "$5"
+    },
+    {
+        "id": 5,
+        "name": "Perfume",
+        "category": "thriller",
+         "description": "A series is a collection of related episodes or installments, often following a continuous  theme..",
+         "img": "./images/series5.png",
+         "price": "$9"
+    },
+    {
+        "id": 6,
+        "name": "flat",
+        "category": "erotic",
+         "description": "A series is a collection of related episodes or installments, often following a continuous storyline or theme.",
+         "img": "./images/series6.png",
+         "price": "$4.58"
+    },
+    {
+        "id": 7,
+        "name": "Smart Phone",
+        "category": "comedy",
+         "description": "A series is a collection of related episodes or installments, often following a continuous storyline or theme.",
+         "img": "./images/series4.png",
+         "price": "$98.5"
+    },
+    {
+        "id": 8,
+        "name": "Perfume",
+        "category": "thriller",
+         "description": "A series is a collection of related episodes or installments, often following a storyline.",
+         "img": "./images/series5.png",
+         "price": "$25.5"
+    },
+    {
+        "id": 9,
+        "name": "family man",
+        "category": "action",
+         "description": "A series is a collection of related episodes or installments, often following a continuous storyline theme.",
+         "img": "./images/series1.png",
+         "price": "$29.5"
+    }
+]

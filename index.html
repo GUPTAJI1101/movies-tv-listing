@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>movie app</title>
+  </head>
+  <body>
+
+    
+    <!-- ========== Start navbar Section ========== -->
+
+     <section class="navbar-section">
+     <header class="section-navbar">
+      <nav class="navbar">
+        <img src="./public/images/logo.png"  alt="logo">
+        <ul>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li class="dropdown">
+            <a href="index.html" class="nav-link">MOVIES</a>
+            <ol class="dropdown-menu">
+              <li><a href="#" class="dropdown-item" data-category="action">Action</a></li>
+              <li><a href="#" class="dropdown-item" data-category="comedy">Comedy</a></li>
+              <li><a href="#" class="dropdown-item" data-category="sci-fi">Sci-Fi</a></li>
+              <li><a href="#" class="dropdown-item" data-category="horror">horror</a></li>
+            </ol>
+          </li>
+          
+          <li class="dropdown">
+            <a href="index.html" class="nav-link">SERIES</a>
+            <ol class="dropdown-menu">
+              <li><a href="#" class="dropdown-item" data-category="action">Action</a></li>
+              <li><a href="#" class="dropdown-item" data-category="thriller">thriller</a></li>
+              <li><a href="#" class="dropdown-item" data-category="comedy">comedy</a></li>
+              <li><a href="#" class="dropdown-item" data-category="erotic">erotic</a></li>
+            </ol>
+          </li>
+          
+           <li><a href="contact.html">CONTACT</a></li>
+         
+           <input type="text" id="search-input" placeholder="Search category">
+           <button id="search" type="button" >Search</button>
+
+           <li class="nav-item">
+           </li>
+          </ul>
+    </nav>
+     </header>
+    </section>
+    <!-- ========== End navbar Section ========== -->
+    <!-- ========== Start hero Section ========== -->
+    <main>
+      <section class="hero-section">
+        <div class="container grid grid-two--cols">
+          <div class="hero-content">
+            <h1 class="hero-h1">WATCH EVERY MOVIE AND SERIES YOU LOVE </h1>
+            <br>
+            <br>
+            <P class="hero-p">Guptaji is the owner and creator of this website. By acquiring their monthly subscription, you may effortlessly view any movie or series on this website. Each movie has its own monthly membership. To watch your movies and TV shows, you can purchase a monthly subscription in the cart..</P>
+          </div>
+          <div class="image-scroll-conatiner">
+            <div class="image-scroll">
+           <img src="https://m.media-amazon.com/images/M/MV5BNzBlYWE5ZWUtMTU2OC00MDQwLWI1M2ItMjllZDExYjI3Y2M3XkEyXkFqcGc@.jpg" alt="ullu">
+           <img src="./public/images/movie1.png" alt="movie1">
+           <img src="./public/images/movie2.png" alt="movie2">
+           <img src="./public/images/movie3.png" alt="movie3">
+           <img src="./public/images/movie4.png" alt="movie4">
+           <img src="./public/images/movie5.png" alt="movie5">
+           <img src="./public/images/series1.png" alt="movie6">
+           <img src="./public/images/series2.png" alt="movie7">
+           <img src="./public/images/series3.png" alt="movie8">
+           <img src="./public/images/series4.png" alt="movie9">
+           <img src="./public/images/series5.png" alt="movie10">
+           <img src="./public/images/series6.png" alt="movie11">
+            </div>
+          </div>
+        
+        </div>           
+      </section>
+    </main>
+    <!-- ========== End hero Section ========== -->
+    <!-- ========== Start movies Section ========== -->
+    <section class="movies-section container">
+      <div>
+      <h1>WATCH MOVIES</h1>
+    </div>
+
+    <section class="container scrollable-container ">
+      <button class="scroll-btn left-scroll-btn" type="button" >⬅️</button>
+      <div id="movieContainer"></div>
+      <button class="scroll-btn right-scroll-btn" type="button" >➡️</button>
+   </section>
+    </section>
+
+    <!-- ========== Start product template  Section ========== -->
+    <template id="movieTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <span class="category"></span>
+          <div class="image-container">
+            <img class="movieImage" src="" alt="">
+          </div>
+          <h2 class="movieName"></h2>
+          <br>
+          <div class="movieRating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+           <i class="fa-solid fa-star"></i>
+          </div>
+          <br>
+          <p class="movieDescription"></p>
+          <div class="moviePriceElement">
+            <p class="moviePrice"></p>
+            <p class="movieActualPrice"></p>
+          </div>
+          <br>
+          <br>
+          <button class="add-to-cart-button" type="button" >
+            <i class="fa-solid fa-cart-shopping"></i> Add Subscription </a> </button>
+        </article> 
+      </div>
+    </template>
+    <!-- ========== End product template  Section ========== -->
+    <!-- ========== End movies Section ========== -->
+  
+    <!-- ========== Start series Section ========== -->
+    <section class="series-section container">
+      <div>
+        <h1>WATCH SERIES</h1>
+      </div>
+
+      
+    <section class="container scrollable-container ">
+      <button class="scroll-btn left-series-scroll-btn" type="button" >⬅️</button>
+      <div id="seriesContainer"></div>
+      <button class="scroll-btn right-series-scroll-btn" type="button" >➡️</button>
+   </section>
+    </section>
+
+
+    <!-- ========== Start template Section ========== -->
+    <template id="seriesTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information [card]">
+          <span class="category"></span>
+          <div class="image-container">
+            <img class="seriesImage" src="" alt="">
+          </div>
+          <h2 class="seriesName"></h2>
+          <br>
+          <div class="seriesRating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+           <i class="fa-solid fa-star"></i>
+          </div>
+          <br>
+          <p class="seriesDescription"></p>
+          <div class="seriesPriceElement">
+            <p class="seriesPrice"></p>
+            <p class="seriesActualPrice"></p>
+          </div>
+          <br>
+          <br>
+          <button class="add-to-cart-button" type="button">
+            <i class="fa-solid fa-cart-shopping"></i> Add Subscription </button>
+        </article> 
+      </div>
+    </template>
+    <!-- ========== End template Section ========== -->
+    <!-- ========== End series Section ========== -->
+    
+    <!-- ========== Start footer Section ========== -->
+    
+    <footer class="section-footer"> 
+       <div class="footerContainer container">
+          <div class="footer-content">
+            <img src="./public/images/logo.png" alt="logo">
+            <h2 class="footer-h">GUPTAJI_MOJ is the original version of 100+ OTT apps like Netflix, Ullu, etc.</h2>
+            <br>
+            <p class="footer-p">Keep in touch with us and tell your friends and family about us.</p>
+            <br>
+            <p footer-p>© 2025 GUPTAJI_MOJ</p>
+          </div>
+       </div>
+    </footer>
+
+
+
+    <!-- ========== End footer Section ========== -->
+    
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>

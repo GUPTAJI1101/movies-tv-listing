@@ -1,0 +1,72 @@
+[
+    {
+   "id": 1,
+   "name": "Deadpool",
+   "category": "action",
+    "description": "Deadpool, a 2016 superhero film, directed by Tim Miller, features Marvel by Nicieza.",
+    "img": "./images/movie1.png",
+    "price": "$41"
+  },
+  {
+    "id": 2,
+    "name": "GREMLINS",
+    "category": "action",
+     "description": "Billy Peltzer's carelessness with Gizmo,mischievous Gremlins to wreak town-wide havoc.",
+     "img": "./images/movie2.png",
+     "price": "$51"
+   },
+   {
+    "id": 3,
+    "name": "HOLIDAY",
+    "category": "horror",
+     "description": "The Holiday, a 2006 romantic comedy, follows Iris and Amanda finding love home exchange.",
+     "img": "./images/movie3.png",
+     "price": "$21"
+   },
+   {
+    "id": 4,
+    "name": "MIRROR",
+    "category": "horror",
+     "description": "Mirrors is a supernatural horror film about Ben,   . an ex-cop  supernatural Mayflower.हकीकत?   ",
+     "img": "./images/movie4.png",
+     "price": "$11"
+   },
+   {
+    "id": 5,
+    "name": "EDITROOM",
+    "category": "sci-fi",
+     "description": "एक संपादक को कंप्यूटर पर काम करते समय अजीब चीजें दिखती हैं, भ्रम या हकीकत? यह भ्रम है या हकीकत? यह भ्रम है या हकीकत?",
+     "img": "./images/movie5.png",
+     "price": "$61"
+   },
+   {
+    "id": 6,
+    "name": "EDITROOM",
+    "category": "sci-fi",
+     "description": "एक संपादक को कंप्यूटर पर काम करते समय अजीब चीजें दिखती हैं, भ्रम या हकीकत? यह भ्रम है या हकीकत? यह भ्रम है या हकीकत?",
+     "img": "./images/movie5.png",
+     "price": "$59"
+   },
+   {
+    "id": 7,
+    "name": "GREMLINS",
+    "category": "action",
+     "description": "Billy Peltzer's carelessness with Gizmo,mischievous Gremlins to wreak town-wide havoc.",
+     "img": "./images/movie2.png",
+     "price": "$.26"
+   }, {
+    "id": 8,
+    "name": "Deadpool",
+    "category": "comedy",
+     "description": "Deadpool, a 2016 superhero film, directed by Tim Miller, features Marvel by Nicieza.",
+     "img": "./images/movie1.png",
+     "price": "$89"
+   }, {
+    "id": 9,
+    "name": "EDITROOM",
+    "category": "sci-fi",
+     "description": "एक संपादक को कंप्यूटर पर काम करते समय अजीब चीजें दिखती हैं, भ्रम या हकीकत? यह भ्रम है या हकीकत? यह भ्रम है या हकीकत?",
+     "img": "./images/movie5.png",
+     "price": "$52"
+   }
+]

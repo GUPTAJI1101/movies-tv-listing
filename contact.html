@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>movie app</title>
+  </head>
+  <body>
+
+    
+    <!-- ========== Start navbar Section ========== -->
+
+     <section class="navbar-section">
+     <header class="section-navbar">
+      <nav class="navbar">
+        <img src="./public/images/logo.png"  alt="logo">
+        <ul>
+          <li><a href="index.html" class="nav-link">HOME</a></li>
+          <li class="dropdown">
+            <a href="movies.html" class="nav-link">MOVIES</a>
+            <ol class="dropdown-menu">
+              <li><a href="#" class="dropdown-item" data-category="action">Action</a></li>
+              <li><a href="#" class="dropdown-item" data-category="comedy">Comedy</a></li>
+              <li><a href="#" class="dropdown-item" data-category="sci-fi">Sci-Fi</a></li>
+              <li><a href="#" class="dropdown-item" data-category="horror">horror</a></li>
+            </ol>
+          </li>
+          
+          <li class="dropdown">
+            <a href="series.html" class="nav-link">SERIES</a>
+            <ol class="dropdown-menu">
+              <li><a href="#" class="dropdown-item" data-category="action">Action</a></li>
+              <li><a href="#" class="dropdown-item" data-category="comedy">Comedy</a></li>
+              <li><a href="#" class="dropdown-item" data-category="sci-fi">Sci-Fi</a></li>
+              <li><a href="#" class="dropdown-item" data-category="horror">horror</a></li>
+            </ol>
+          </li>
+          
+           <li><a href="contact.html">CONTACT</a></li>
+         
+           <input type="text" id="search-input" placeholder="Search category">
+           <button id="search" type="button" >Search</button>
+
+           <li class="nav-item">
+           </li>
+          </ul>
+    </nav>
+     </header>
+    </section>
+    <!-- ========== End navbar Section ========== -->
+       <!-- ========== Start conatct Section ========== -->
+       <div class="container contact-section">
+        <div class="form grid grid-two--cols">
+            <div class="form-section">
+                <form action="https://formspree.io/f/xyzyanvw" method="POST">
+                    <label for="name">NAME:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" placeholder="Type your message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6980.885600567556!2d77.71969679216602!3d28.974246937937792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c64c19b7e3d75%3A0xd38c4a2b6ce94663!2sPhool%20Bagh%20Colony%2C%20Panchsheel%20Colony%2C%20Meerut%2C%20Uttar%20Pradesh%20250003!5e0!3m2!1sen!2sin!4v1734855053954!5m2!1sen!2sin"
+                    width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+       <!-- ========== End conatct Section ========== -->
+
+    <!-- ========== Start footer Section ========== -->
+    
+    <footer class="section-footer"> 
+       <div class="footerContainer container">
+          <div class="footer-content">
+            <img src="./public/images/logo.png" alt="logo">
+            <h2 class="footer-h">GUPTAJI_MOJ is the original version of 100+ OTT apps like Netflix, Ullu, etc.</h2>
+            <br>
+            <p class="footer-p">Keep in touch with us and tell your friends and family about us.</p>
+            <br>
+            <p footer-p>© 2025 GUPTAJI_MOJ</p>
+          </div>
+       </div>
+    </footer>
+
+
+
+    <!-- ========== End footer Section ========== -->
+    
+
+    <script type="module" src="/main.js"></script>
+
+  </body>
+</html>

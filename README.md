@@ -3,6 +3,9 @@
 
 🔗 Live Demo
 Check out the live project here: Movies & TV Listing App
+## 🔗 Live Demo  
+Check out the live project here: [Movies & TV Listing App](https://dreamy-alfajores-e0d262.netlify.app/)
+
 
 📂 Features
 ✅ Discover Latest Movies & TV Shows - Stay updated with trending content.
